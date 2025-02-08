@@ -542,6 +542,12 @@
   .static {
     position: static;
   }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .col-span-3 {
+    grid-column: span 3 / span 3;
+  }
   .\!container {
     width: 100% !important;
     @media (width >= 40rem) {
@@ -635,9 +641,21 @@
   .resize {
     resize: both;
   }
+  .grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
