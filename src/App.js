@@ -7,7 +7,7 @@ import BandForm from "./BandForm";
 function App() {
   const bands = [skaBand, kpopBand, punkBand];
   return (
-    <div className="App">
+    <div className="App p-10">
       <BandForm band={bands[0]} />
     </div>
   );
