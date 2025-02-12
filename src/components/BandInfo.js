@@ -5,7 +5,7 @@ import parse from "html-react-parser";
 const PLACEHOLDER_IMAGE_URL = '/placeholder.jpg';
 
 export default function BandInfo({ show }) {
-  const [imgUrl, setImgUrl] = useState(show.imgUrl);
+  const [imgUrl, setImgUrl] = useState(show.imgUrl || PLACEHOLDER_IMAGE_URL);
 
   function onImgError(e) {
     e.preventDefault();
