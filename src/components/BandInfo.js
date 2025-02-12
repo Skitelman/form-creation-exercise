@@ -12,8 +12,8 @@ export default function BandInfo({ show }) {
     setImgUrl(PLACEHOLDER_IMAGE_URL);
   }
   return (
-    <div className="bg-gray-100 p-4">
-      <img src={imgUrl} alt={show.name} className="block w-full" onError={onImgError} />
+    <div className="text-gray-300">
+      <img src={imgUrl} alt={show.name} className="rounded-lg block w-full" onError={onImgError} />
       {parse(DOMPurify.sanitize(show.description_blurb))}
     </div>
   );
