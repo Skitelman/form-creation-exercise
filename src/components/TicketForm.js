@@ -13,9 +13,9 @@ export default function TicketForm({ show }) {
     firstName: "",
     lastName: "",
     address: "",
-    cardNumber: undefined,
-    expiration: "",
-    cvv: undefined,
+    cardNumber: "",
+    exp: "",
+    cvv: "",
   });
 
   function updateTicketCount(type) {
@@ -40,7 +40,7 @@ export default function TicketForm({ show }) {
   }
 
   return (
-    <div className="bg-gray-100 p-4">
+    <div className="bg-gray-100 p-4 overflow-y-auto">
       <h2 className="text-xl font-bold text-blue-700 mb-2">Select Tickets</h2>
       {show.ticketTypes.map(ticket => (
         <SelectTicketsTile
@@ -56,7 +56,7 @@ export default function TicketForm({ show }) {
       </div>
       <BillingDetails billingDetails={billingDetails} updateBillingDetails={updateBillingDetails} />
       <button
-        className="bg-blue-700 hover:bg-blue-500 focus:outline-2 focus:outline-offset-2 focus:outline-blue-700 active:bg-blue-500 text-white p-2 rounded w-full"
+        className="bg-blue-700 hover:bg-blue-500 focus:outline-2 focus:outline-offset-2 focus:outline-blue-700 active:bg-blue-500 text-white p-2 rounded w-full my-4"
         onClick={purchaseTickets}
       >
         Get Tickets

@@ -16,14 +16,36 @@ export default function BillingDetails({ billingDetails, updateBillingDetails })
           onChange={updateBillingDetails("lastName")}
           className="border-2 rounded border-gray-300 p-1 w-full"
         />
-      </div>
       <input
           type="text"
           placeholder="Address"
           value={billingDetails.address}
           onChange={updateBillingDetails("address")}
-          className="border-2 rounded border-gray-300 p-1 w-full my-2"
+          className="col-span-2 border-2 rounded border-gray-300 p-1 w-full my-2"
         />
+        <h3 className="col-span-2 text-gray-800 font-bold">Payment Details</h3>
+        <input
+          type="text"
+          placeholder="0000    0000    0000    0000"
+          value={billingDetails.cardNumber}
+          onChange={updateBillingDetails("cardNumber")}
+          className="col-span-2 border-2 rounded border-gray-300 p-1 w-full my-2"
+        />
+        <input
+          type="text"
+          placeholder="MM/YY"
+          value={billingDetails.exp}
+          onChange={updateBillingDetails("exp")}
+          className="border-2 rounded border-gray-300 p-1 w-full"
+        />
+        <input
+          type="text"
+          placeholder="CVV"
+          value={billingDetails.cvv}
+          onChange={updateBillingDetails("cvv")}
+          className="border-2 rounded border-gray-300 p-1 w-full"
+        />
+      </div>
     </div>
   );
 }
