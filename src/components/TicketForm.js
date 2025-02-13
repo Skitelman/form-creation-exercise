@@ -56,7 +56,7 @@ export default function TicketForm({ show }) {
       </div>
       <BillingDetails billingDetails={billingDetails} updateBillingDetails={updateBillingDetails} />
       <button
-        className="bg-blue-300 hover:bg-gray-50 focus:outline-2 focus:outline-offset-2 focus:outline-gray-50 active:bg-gray-300 text-slate-800 p-2 rounded w-full my-4"
+        className="bg-blue-500 hover:bg-blue-700 focus:outline-2 focus:outline-offset-2 focus:outline-blue-700 active:bg-blue-500 text-gray-50 p-2 font-bold text-lg rounded w-full my-4"
         onClick={purchaseTickets}
       >
         Get Tickets
