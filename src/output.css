@@ -786,6 +786,12 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .bg-blue-200 {
+    background-color: var(--color-blue-200);
+  }
+  .bg-blue-300 {
+    background-color: var(--color-blue-300);
+  }
   .bg-blue-700 {
     background-color: var(--color-blue-700);
   }
@@ -797,6 +803,9 @@
   }
   .bg-gray-300 {
     background-color: var(--color-gray-300);
+  }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
   }
   .bg-gray-600 {
     background-color: var(--color-gray-600);
@@ -948,6 +957,15 @@
   .text-gray-900 {
     color: var(--color-gray-900);
   }
+  .text-slate-600 {
+    color: var(--color-slate-600);
+  }
+  .text-slate-700 {
+    color: var(--color-slate-700);
+  }
+  .text-slate-800 {
+    color: var(--color-slate-800);
+  }
   .text-slate-900 {
     color: var(--color-slate-900);
   }
@@ -1033,6 +1051,20 @@
       }
     }
   }
+  .hover\:bg-gray-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-50);
+      }
+    }
+  }
+  .hover\:bg-gray-200 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-200);
+      }
+    }
+  }
   .hover\:bg-gray-500 {
     &:hover {
       @media (hover: hover) {
@@ -1056,6 +1088,16 @@
       outline-color: var(--color-blue-700);
     }
   }
+  .focus\:outline-gray-50 {
+    &:focus {
+      outline-color: var(--color-gray-50);
+    }
+  }
+  .focus\:outline-gray-200 {
+    &:focus {
+      outline-color: var(--color-gray-200);
+    }
+  }
   .focus\:outline-gray-500 {
     &:focus {
       outline-color: var(--color-gray-500);
@@ -1066,9 +1108,19 @@
       background-color: var(--color-blue-500);
     }
   }
+  .active\:bg-gray-200 {
+    &:active {
+      background-color: var(--color-gray-200);
+    }
+  }
   .active\:bg-gray-300 {
     &:active {
       background-color: var(--color-gray-300);
+    }
+  }
+  .active\:bg-gray-500 {
+    &:active {
+      background-color: var(--color-gray-500);
     }
   }
 }
