@@ -1131,6 +1131,13 @@
     -webkit-user-select: all;
     user-select: all;
   }
+  .hover\:bg-blue-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-500);
+      }
+    }
+  }
   .hover\:bg-blue-700 {
     &:hover {
       @media (hover: hover) {
@@ -1142,6 +1149,27 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-fuchsia-700);
+      }
+    }
+  }
+  .hover\:bg-gray-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-50);
+      }
+    }
+  }
+  .hover\:bg-gray-200 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-200);
+      }
+    }
+  }
+  .hover\:bg-gray-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-500);
       }
     }
   }
@@ -1178,6 +1206,16 @@
       outline-color: var(--color-gray-50);
     }
   }
+  .focus\:outline-gray-200 {
+    &:focus {
+      outline-color: var(--color-gray-200);
+    }
+  }
+  .focus\:outline-gray-500 {
+    &:focus {
+      outline-color: var(--color-gray-500);
+    }
+  }
   .focus\:outline-orange-700 {
     &:focus {
       outline-color: var(--color-orange-700);
@@ -1188,9 +1226,19 @@
       background-color: var(--color-blue-500);
     }
   }
+  .active\:bg-gray-200 {
+    &:active {
+      background-color: var(--color-gray-200);
+    }
+  }
   .active\:bg-gray-300 {
     &:active {
       background-color: var(--color-gray-300);
+    }
+  }
+  .active\:bg-gray-500 {
+    &:active {
+      background-color: var(--color-gray-500);
     }
   }
   .active\:bg-orange-500 {
